@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body { padding-top:50px; }
+</style>
+</head>
+<body class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">My Blog</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/">Blogs</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="jumbotron">
+      <h1>This is great</h1>
+      <p>Welcome to templating using EJS</p>
+
+      <form action="/blogs/api/insert" method="POST">
+        <input type="text" name="blog_title" placeholder="Blog Title"> <br> <br>
+        <textarea name="blog_content" rows="4" cols="50" placeholder="Write..."></textarea> <br>
+        <button type="submit">Save</button>
+    </form>
+    </div>
+  </main>
+  
+</body>
+</html>
